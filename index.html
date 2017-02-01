@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html ng-app="livedataApp">
+<head>
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.js"></script>
+  <script src="app-module.js"></script>
+  <script src="app-config.js"></script>
+  <script src="list-component/data-list.module.js"></script>
+  <script src="list-component/data-list.component.js"></script>
+  <title>liveData page</title>
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="#!/">Home</a></li>
+    <li><a href="#!/aboutus">About us</a></li>
+    <li><a href="#!/products">Products</a></li>
+  </ul>
+
+  <div ng-view></div>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+
+</html>

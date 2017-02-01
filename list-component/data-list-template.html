@@ -1,0 +1,11 @@
+<!-- list data page -->
+    Search: <input ng-model="$ctrl.searchQuery" />
+
+	<ul class="posts-list">
+		<li ng-repeat="post in $ctrl.posts | filter:$ctrl.searchQuery">
+			<div>{{post.id}}</div>
+			<div>{{post.username}} <i> ({{post.email}})</i></div>
+			<div>{{post.company.name}}</div>
+			<p></p>
+		</li>
+	</ul>
