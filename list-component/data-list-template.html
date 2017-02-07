@@ -1,10 +1,13 @@
 <!-- list data page -->
+	<h1>User data list</h1>
+	<p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+
     Search: <input ng-model="$ctrl.searchQuery" />
 
 	<ul class="posts-list">
-		<li ng-repeat="post in $ctrl.posts | filter:$ctrl.searchQuery">
+		<li ng-repeat="post in $ctrl.posts | filter:$ctrl.searchQuery | limitTo: $ctrl.limit" class="cruises">
 			<div>{{post.id}}</div>
-			<div>{{post.username}} <i> ({{post.email}})</i></div>
+			<div><a href="#!/products/{{post.id}}">{{post.username}}</a> <i> ({{post.email}})</i></div>
 			<div>{{post.company.name}}</div>
 			<p></p>
 		</li>

@@ -14,5 +14,8 @@ angular.module('livedataApp')
 					when('/products', {
 						template: '<show-data-list></show-data-list>'
 					}).
+					when('/products/:postId', {
+						template: '<show-detail-list></show-detail-list>'
+					}).
 					otherwise('/');
 			}])

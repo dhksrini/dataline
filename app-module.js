@@ -2,5 +2,7 @@
 'use strict';
 angular.module('livedataApp', [
   'showDataList',
-  'ngRoute'
-]);
+  'showDetailList',
+  'ngRoute',
+  'CodedataOp'
+])
